@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game-container">
+            <h1 class="title">X Game</h1>
+            
+            <div class="player-selection" id="player-selection">
+                <h2>Select Game Mode</h2>
+                <div class="mode-buttons">
+                    <button class="mode-btn" data-mode="human">
+                        <div class="btn-content">Human vs Human</div>
+                    </button>
+                    <button class="mode-btn" data-mode="computer">
+                        <div class="btn-content">Human vs Computer</div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="game-board-container" id="game-board-container" style="display: none;">
+                <div class="score-container">
+                    <div class="player-card red-player">
+                        <div class="player-info">
+                            <div class="player-name">Player 1</div>
+                            <div class="player-score" id="red-score">0</div>
+                        </div>
+                    </div>
+
+                    <div class="turn-display">
+                        <div class="turn-label">Current Turn</div>
+                        <div id="current-player">Red</div>
+                    </div>
+
+                    <div class="player-card green-player">
+                        <div class="player-info">
+                            <div class="player-name">Player 2</div>
+                            <div class="player-score" id="green-score">0</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="board-container">
+                    <div class="board" id="game-board"></div>
+                </div>
+
+                <div class="controls">
+                    <button id="new-game" class="new-game-btn">
+                        <div class="btn-content">New Game</div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
